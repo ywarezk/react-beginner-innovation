@@ -32,4 +32,6 @@ Try and design your app using bootstrap which is already added to the `index.htm
 
 ## Run in browser
 
-To run the app in the browser simply click the `index.html` file twice
+```
+npx http-server
+```
