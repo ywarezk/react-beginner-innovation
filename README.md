@@ -16,3 +16,5 @@ You need basic knowledge of the following:
 - JS
 - CSS
 
+## Video Lectures
+
