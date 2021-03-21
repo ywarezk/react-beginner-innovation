@@ -8,3 +8,7 @@ In this lesson we will familiarize ourselves with react and understand basic rea
 - Single Page Application
 - Our first component
 - VirtualDOM
+
+## Video lecture from youtube
+
+https://www.youtube.com/watch?v=bVPMCmTN__Q&list=PLnHa2cF4cNDtfkYKO6v069GUPYrJtijwc&index=1
