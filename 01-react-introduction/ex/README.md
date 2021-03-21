@@ -30,3 +30,6 @@ It will hold a form with an email and a password field and a submit button.
 
 Try and design your app using bootstrap which is already added to the `index.html`
 
+## Run in browser
+
+To run the app in the browser simply click the `index.html` file twice
