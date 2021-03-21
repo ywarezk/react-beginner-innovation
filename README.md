@@ -16,5 +16,11 @@ You need basic knowledge of the following:
 - JS
 - CSS
 
+## Youtube react playlist
+
+https://www.youtube.com/watch?v=bVPMCmTN__Q&list=PLnHa2cF4cNDtfkYKO6v069GUPYrJtijwc
+
+
+
 ## Video Lectures
 
