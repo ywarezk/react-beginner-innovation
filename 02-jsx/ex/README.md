@@ -39,3 +39,15 @@ fetch(
 
 Print to the console the response json you are getting from the server.
 
+In the Login component add a boolean variable
+
+```
+const isLoading = true
+```
+
+If this variable is true the submit button should be disabled and a loading text should appear.
+
+If the `isLoading` is false the button should be enabled and the loading text should disappear.
+
+
+
