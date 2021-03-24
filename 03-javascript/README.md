@@ -12,3 +12,8 @@ Going over some basic javascript we will use in this course
 - Promise
 - Destructuring
 - Spread operator
+
+### EX.
+
+- use flex to position your todo application
+- try to use async await for sending the request from the login form
