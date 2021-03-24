@@ -1,0 +1,47 @@
+html, body, #container {
+	height: 100%;
+}
+
+.header {
+	background-color: gray;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header nav {
+	display: flex;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.wrapper .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.footer {
+	background-color: bisque;
+}
+
