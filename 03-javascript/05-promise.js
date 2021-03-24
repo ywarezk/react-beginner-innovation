@@ -198,8 +198,13 @@ timerPromise
 async function getFromServer() {
 	// http://nztodo.herokuapp.com/api/tasks/?format=json
 	const url = await timerPromise;
-	const response = await fetch(url);
-	const contentFromServer = await response.json();
+	try {
+		const response = await fetch(url);
+		const contentFromServer = await response.json();		
+	} catch(err) {
+		return []
+	}
+	
 	
 	return contentFromServer;
 }
@@ -207,5 +212,8 @@ async function getFromServer() {
 getFromServer().then(
 	function(piglet) {
 		console.log(piglet);
+	},
+	function(err) {
+		
 	}
 )
