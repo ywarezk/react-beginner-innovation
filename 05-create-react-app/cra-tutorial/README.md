@@ -47,6 +47,57 @@ place this in the head in the `index.html`
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
+## How to deploy our web site
+
+### Github pages
+
+- register for free - github. 
+- create a new repository for your project
+- install git on your computer: [install git](https://git-scm.com/downloads)
+- place the following commands in your terminal
+
+```base
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/ywarezk/innovation-demo-app.git
+git push -u origin master
+```
+- modify the package.json. add the following:
+
+```
+"homepage": "https://ywarezk.github.io/innovation-demo-app",
+```
+
+- install the following package:
+
+```
+> npm install gh-pages
+```
+
+- Add the following to the `scripts` section of the `package.json`
+
+```
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+```
+
+- to deploy your app
+
+- you can use git to push your code
+
+```
+git add .
+git commit -m "changed something in your app"
+git push origin master
+```
+
+- you can deploy your app
+
+```
+> npm run deploy
+```
+
 ## EX.
 
 - start a new project with `create-react-app`
