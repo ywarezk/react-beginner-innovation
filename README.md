@@ -83,6 +83,12 @@ Please read the following javascript docs:
 
 https://www.youtube.com/watch?v=bVPMCmTN__Q&list=PLnHa2cF4cNDtfkYKO6v069GUPYrJtijwc
 
+## Link to react popular libraries
+
+- [Material Design](https://material-ui.com/)
+- [Ant Design](https://ant.design/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+
 
 ## Video Lectures
 
