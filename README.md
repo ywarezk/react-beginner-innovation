@@ -96,6 +96,7 @@ https://www.youtube.com/watch?v=bVPMCmTN__Q&list=PLnHa2cF4cNDtfkYKO6v069GUPYrJti
   - [css modules](https://css-tricks.com/css-modules-part-1-need/)
   - [styled components](https://styled-components.com/)
 
+- react-query: [react-query](https://react-query.tanstack.com/)
 
 ## Video Lectures
 

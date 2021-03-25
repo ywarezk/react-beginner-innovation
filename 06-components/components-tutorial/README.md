@@ -20,4 +20,8 @@ fetch('https://nztodo.herokuapp.com/api/task/:id?format=json', {
 	method: 'DELETE'
 })
 ```
+### Bonus
+
+Try and make the queries using the react-query library.
+
 
