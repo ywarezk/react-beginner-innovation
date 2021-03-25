@@ -25,4 +25,10 @@ To start a new project use the following command:
 - Each file should have a component inside
 - Modify `App.js` to include the component and arrange them.
 
+## EX.
+
+- install [Material Design](https://material-ui.com/)
+- In the `Login.js` place material design button as the submit button: [Button](https://material-ui.com/components/buttons/)
+- In the `Login.js` place material design TextField as the email and password input: [TextField](https://material-ui.com/components/text-fields/)
+- In the `Header.js` use material  TopBar 
 

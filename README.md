@@ -88,3 +88,5 @@ https://www.youtube.com/watch?v=bVPMCmTN__Q&list=PLnHa2cF4cNDtfkYKO6v069GUPYrJti
 
 1. https://johnbryce.zoom.us/rec/share/N1M7-zbY6ojqafWligM7REdvF2Lst005HJnNX81vKrjaDB36eETuO97xyUvwN_-Q.11Ft6YW7UOFbozYH
 
+2. https://johnbryce.zoom.us/rec/share/p_zAZTPQE_o26XBID3fcBtGCPOQuXSnrXuP7kZTGoY7RLUcSK12qXfkEqE6Rzkk1.za370aXuTwh1CCU5
+
