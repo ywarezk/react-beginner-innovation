@@ -85,9 +85,16 @@ https://www.youtube.com/watch?v=bVPMCmTN__Q&list=PLnHa2cF4cNDtfkYKO6v069GUPYrJti
 
 ## Link to react popular libraries
 
-- [Material Design](https://material-ui.com/)
-- [Ant Design](https://ant.design/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
+- React nice ui components:
+  - [Material Design](https://material-ui.com/)
+  - [Ant Design](https://ant.design/)
+  - [React Bootstrap](https://react-bootstrap.github.io/)
+  
+- Styling your app
+  - css
+  - [scss](https://sass-lang.com/)
+  - [css modules](https://css-tricks.com/css-modules-part-1-need/)
+  - [styled components](https://styled-components.com/)
 
 
 ## Video Lectures

@@ -16,6 +16,37 @@ To start a new project use the following command:
 > npm start
 ```
 
+## To install a library
+
+```
+> npm install <library name>
+> npm i <library name>
+```
+
+## NPX
+
+node package executer
+
+activate commands
+
+```
+> npx create-react-app <project-name>
+```
+
+## To install material design
+
+```
+> npm install @material-ui/core
+> npm install @material-ui/icons
+```
+
+place this in the head in the `index.html`
+
+```
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+```
+
 ## EX.
 
 - start a new project with `create-react-app`
@@ -30,5 +61,7 @@ To start a new project use the following command:
 - install [Material Design](https://material-ui.com/)
 - In the `Login.js` place material design button as the submit button: [Button](https://material-ui.com/components/buttons/)
 - In the `Login.js` place material design TextField as the email and password input: [TextField](https://material-ui.com/components/text-fields/)
-- In the `Header.js` use material  TopBar 
-
+- use Paper to make the login and todo component stand out a bit: [Paper](https://material-ui.com/components/paper/)
+- In the `Header.js` use material  AppBar [AppBar](https://material-ui.com/components/app-bar/) 
+- in the todo list place a grabage icon button [IconButton](https://material-ui.com/components/buttons/#sizes)
+- place the image in an avatar component: [Avatar](https://material-ui.com/components/avatars/#avatar)
