@@ -25,3 +25,9 @@ fetch('https://nztodo.herokuapp.com/api/task/:id?format=json', {
 Try and make the queries using the [react-query](https://react-query.tanstack.com/)  library.
 
 
+## EX.
+
+Install chrome developer tools:
+
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
+
