@@ -22,6 +22,6 @@ fetch('https://nztodo.herokuapp.com/api/task/:id?format=json', {
 ```
 ### Bonus
 
-Try and make the queries using the react-query library.
+Try and make the queries using the [react-query](https://react-query.tanstack.com/)  library.
 
 
