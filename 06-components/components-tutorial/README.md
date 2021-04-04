@@ -27,7 +27,9 @@ Try and make the queries using the [react-query](https://react-query.tanstack.co
 
 ## EX.
 
-Install chrome developer tools:
+Install react developer tools:
 
 https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
 
+- remove the load list button
+- use the `useEffect` to fetch the list when the component is born
