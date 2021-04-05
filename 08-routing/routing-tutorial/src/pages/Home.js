@@ -12,7 +12,7 @@ export default function Home() {
 	 * we want to navigate the user to the about page
 	 */
 	const navigateToAbout = () => {
-		history.push('/about');
+		history.push('/about?hello=world&foo=bar');
 	}
 	
 	return (
