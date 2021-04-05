@@ -1,70 +1,202 @@
-# Getting Started with Create React App
+# Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## State
 
-## Available Scripts
+snapshot of our data in a current t
 
-In the project directory, you can run:
+```
+state0 = {
+	user: {
+		firstName: null,
+		lastName: null,
+		email: null',
+		token: null
+	},
+	todo: {
+		tasks: []
+	}	
+}
 
-### `yarn start`
+state1 = {
+	user: {
+		firstName: 'Yariv',
+		lastName: 'Katz',
+		email: 'yariv@nerdeez.com',
+		token: 'sdfasdf234234sdf'
+	},
+	todo: {
+		tasks: []
+	}	
+}
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+state2 = {
+	user: {
+		firstName: 'Yariv',
+		lastName: 'Katz',
+		email: 'yariv@nerdeez.com',
+		token: 'sdfasdf234234sdf'
+	},
+	todo: {
+		tasks: [ {title: ...}, {...}]
+	}	
+}
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+the redux state is immutable
 
-### `yarn test`
+const arr = [1,2,3]
+arr.push(4)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+let myAge = 36
+myAge = 42
 
-### `yarn build`
+## Store
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+the one the guards and holds the state
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Install redux
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Installing redux
 
-### `yarn eject`
+```
+npm install redux @reduxjs/toolkit
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+redux is not specific to react
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## react-redux
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+connect redux to react components
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm install react-redux
+```
 
-## Learn More
+## creating the Store
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+import { configureStore } from @reduxjs/toolkit
+```
+const store = configureStore({
+	// params the defines our store
+})
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## browser extension: redux dev tools
 
-### Code Splitting
+Install the following browser extension:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
 
-### Analyzing the Bundle Size
+## To change the data in redux
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+// change the state in redux
+store.dispatch(...)
+```
 
-### Making a Progressive Web App
+the result is a new state object  
+clone previous state  
+clonse part of state the i want to change  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+state0 -> state1
 
-### Advanced Configuration
+```
+state0 = {
+	user: {
+		firstName: null,
+		lastName: null,
+		email: null',
+		token: null
+	},
+	todo: {
+		tasks: []
+	}	
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+state1 = {
+	user: {
+		firstName: 'Yariv',
+		lastName: 'Katz',
+		email: 'yariv@nerdeez.com',
+		token: 'sdfasdf234234sdf'
+	},
+	todo: {
+		tasks: []
+	}	
+}
 
-### Deployment
+state1 {
+	...state0,
+	user: {
+		firstName: 'Yariv',
+		lastName: 'Katz',
+		email: 'yariv@nerdeez.com',
+		token: 'sdfasdf234234sdf'
+	}
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+store.dispatch( { type: 'DEPOSIT', payload: 10 } )
+```
 
-### `yarn build` fails to minify
+## Action
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+action describes a change you want to do in the store state.
+
+The action has name
+optional payload with additional data that is required to change the state
+
+{ type: 'DEPOSIT', payload: 10 }
+
+## Reducer
+
+reducer will do the actuall change  
+action signifies that you want to do a change
+
+## EX.
+
+- install `redux, @reduxjs/toolkit, react-redux`
+- create store using `configureStore`
+
+```
+state0 = {
+	user: {
+		token: null
+	}
+}
+```
+
+- create `userReducer`
+
+```
+store.dispatch( {type: 'SET_TOKEN', payload: 'sadfsadf'} )
+```
+
+```
+state1 = {
+	user: {
+		token: 'sadfsadf'
+	}
+}
+```
+
+- activate the action after the login
+- `TodoList` read the token
+- when you get a token you query the server
+
+```
+fetch('https://academeez-login-ex.herokuapp.com/api/tasks', {
+	headers: {
+		'Authorization': `Bearer ${token}`
+	}
+})
+.then(
+	(response) => {
+		return response.json()
+	}
+)
+.then((json) => {
+	setTodos(json);
+})
+```
