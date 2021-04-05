@@ -200,3 +200,7 @@ fetch('https://academeez-login-ex.herokuapp.com/api/tasks', {
 	setTodos(json);
 })
 ```
+
+## Bonus
+
+- @reduxjs/toolkit - create slice of user reducer
